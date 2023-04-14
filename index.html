@@ -5,48 +5,147 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Titulo pagina superior</title>
-
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://kit.fontawesome.com/bbfa70ff5f.js" crossorigin="anonymous"></script>
+    <title>ONG</title>
 </head>
 
-<body>
+<body class="overflow-auto">
 
-<br>
-<h1 style="text-align: center;"></style>ONG - AYUDA A UN PELUDO</h1>
+    <!-- ========== -->
+    <!-- ENCABEZADO -->
+    <!-- ========== -->
 
-<link rel="stylesheet" href="/css/estilos.css">
+    <header class="container-fluid d-flex justify-content-center">
+        <p class="mb-0 p-2 fs-6">Contactanos (9) 6354 0147</p>
+    </header>
 
-<style>
+    <!-- =================== -->
+    <!-- BARRA DE NAVEGACIÓN -->
+    <!-- =================== -->
 
+    <nav class="navbar navbar-expand-lg p-3" id="menu">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <span class="fs-2 fw-bold">ONG</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./perritos.html">Perritos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./gatitos.html">Gatitos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./formulario.html">Contactanos</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="email" placeholder="Correo Electronico" aria-label="email">
+                    <button class="btn" type="button" id="btn">Suscribete</button>
+                </form>
+            </div>
+        </div>
+    </nav>
 
-</style>
+    <!-- ============ -->
+    <!-- SLIDER IMAGE -->
+    <!-- ============ -->
 
-<p>Deserunt dolore nihil, dolores quia perspiciatis culpa neque, voluptatem quas asperiores nesciunt, unde ullam ducimus quos molestiae enim ipsum? Sequi nihil facere sapiente asperiores quis fugit atque repellendus similique odit voluptate. Esse officiis quam minima dolores ipsum, incidunt deleniti tempore nesciunt perferendis accusamus distinctio tenetur officia, quidem eligendi aliquam, cum repellendus est ad cupiditate eum. At, incidunt iste. Eius autem eos et odit delectus, molestias, incidunt soluta veniam ipsam aut voluptate vero unde quisquam ea numquam totam animi earum, consequatur nemo quibusdam inventore. </p>
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
 
+            <div class="carousel-item active" data-bs-interval="3000">
+                <img src="./img/slide1.jpg" class="d-block w-100" alt="slide1">
+            </div>
 
-<h1 class="rvs"> Nuestros integrantes:</h1>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="./img/slide2.jpg" class="d-block w-100" alt="slide2">
+            </div>
 
-<ul>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="./img/slide3.jpg" class="d-block w-100" alt="slide3">
+            </div>
 
-    <li>Persona 1 - Cargo 1</li>
-    <li>Persona 2 - Cargo 2</li>
-    <li>Persona 3 - Cargo 3</li>
-    <li>Persona n - Cargo n</li>
-    
-</ul>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="./img/slide4.jpg" class="d-block w-100" alt="slide4">
+            </div>
 
-<h1 style="text-align: center;"></style>Nuestras secciones de ayuda:</h1>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
 
-<img src="/img/perro.png">
-<a href="/perros.html">Perros</a>
+    <!-- =========== -->
+    <!-- INFORMACIÓN -->
+    <!-- =========== -->
 
-<br>
+    <section class="w-75 mx-auto text-center pt-5 pb-5" id="introduccion">
 
-<img src="/img/gato.png" alt="">
-<a href="/gatos.html">Gatos</a>
+        <!-- -------------------------------------------------------------------- -->
+        <!-- LA PROPIEDAD W- SOLO ADMITE VALORES PREDEFINIDOS-25-50-75-100 Y AUTO -->
+        <!-- MX-AUTO REPRESENTA MARGEN HORIZONTAL EN AUTOMATICO Y CENTRA EL TEXTO
+             EN RELACION A LA PAGINA                                              -->
+        <!-- TEXT-CENTER JUSTIFICA EL TEXTO AL CENTRO                             -->
+        <!-- -------------------------------------------------------------------- -->
 
+        <h1 class="pt-5 fs-1 border-top  border-3">Ayuda a un Peludo</h1>
+        <p class="p-5 fs-5 border-bottom border-3">Ayuda a un Peludo se dedica al cuidado y protección de perros y
+            gatos, especialmente
+            aquellos que han sido abandonados o maltratados. Además, promovemos la adopción de mascotas rescatadas y
+            trabajamos en la educación y concientización de la sociedad sobre la importancia de tratar a los animales
+            con respeto y responsabilidad. Nuestra organización ofrece servicios de atención veterinaria, albergue
+            temporal y búsqueda de hogares adoptivos para los animales rescatados. También organizamos campañas de
+            esterilización y vacunación para controlar la población de animales callejeros. En definitiva, nuestro
+            objetivo es mejorar la calidad de vida de los animales y fomentar una convivencia armoniosa entre humanos y
+            mascotas. Ahora bien, ¿crees que la sociedad está lo suficientemente concienciada sobre el cuidado y
+            protección de los animales? ¿Qué más se podría hacer para mejorar la situación de los animales abandonados y
+            maltratados?</p>
+    </section>
 
+    <!-- BOTON BACK TO TOP -->
 
+    <div id="button-up" class="boton">
+        <i class="fa-solid fa-angles-up fa-flip"></i>
+    </div>
 
+    <!-- ====== -->
+    <!-- FOOTER -->
+    <!-- ====== -->
+
+    <footer class="w-100 container-fluid align-items justify-content-center flex-wrap p-2">
+        <div>
+            <p class="mb-0">Fundación Ayuda a un Peludo</p>
+        </div>
+        <div>
+            <p class="mb-0">Copyright © Todos los derechos reservados 2023 W3C<sup>®</sup> - Desarrollado por Röy &
+                Velosoft</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPT BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+    <script src="./js/element.js"></script>
+</body>
 
 </html>

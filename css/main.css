@@ -1,0 +1,212 @@
+/* FUENTES IMPORTADAS */
+@import url('https://fonts.googleapis.com/css2?family=Averia+Libre:wght@400;700&display=swap');
+
+
+/* ----------------------------------------------------------- */
+/*                       PÁGINA INICIO                         */
+/* ----------------------------------------------------------- */
+
+/* ---- */
+/* BODY */
+/* ---- */
+
+body {
+    font-family: 'Averia Libre', cursive;
+    overflow: hidden;
+    background-color: #ecebea;
+}
+
+/* ------ */
+/* HEADER */
+/* ------ */
+
+header {
+    color: #bc5131;
+    background-color: #edc77b;
+
+}
+
+/* ------ */
+/* FOOTER */
+/* ------ */
+
+footer {
+    position: relative;
+    height: auto;
+    background-color: #edc77b;
+    color: #bc5131;
+    padding: 20px;
+    clear: both;
+    font-size: 20;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* ------------------- */
+/* BARRA DE NAVEGACIÓN */
+/* ------------------- */
+
+#menu {
+    background-color: #FFE7CC;
+}
+
+#menu a>span {
+    font-size: 18;
+    font-weight: 400;
+    color: #bc5131;
+}
+
+/* --------------------------------- */
+/* ESTILO PARA EL BOTON DE SUSCRIBIR */
+/* --------------------------------- */
+
+#btn {
+    border-color: #bc5131;
+    background-image: linear-gradient(45deg, #bc5131 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    transition: 0.2s ease-in-out;
+}
+
+#btn:hover {
+    background-position: 0;
+}
+
+/* ------------------ */
+/* SLIDER DE IMAGENES */
+/* ------------------ */
+
+.carousel-item {
+    max-height: 50rem;
+}
+
+#introduccion>h1 {
+    color: #bc5131;
+}
+
+#introduccion>p {
+    color: #3b3027;
+}
+
+/* ----------------------- */
+/* MEDIA QUERIES PANTALLAS */
+/* ----------------------- */
+
+@media (max-width:768px) {
+    #introduccion {
+        width: 100% !important;
+    }
+}
+
+@media (max-width:768px) {
+    #seccion1 {
+        width: 100% !important;
+    }
+}
+
+
+/* ----------------------------------------------------------- */
+/*                      PÁGINA PERRITOS                        */
+/*                      PÁGINA  GATITOS                        */
+/* ----------------------------------------------------------- */
+
+
+#seccion1>h1 {
+    font-size: 20;
+    font-weight: 700;
+    color: #bc5131;
+}
+
+#seccion1>p {
+    font-size: 18;
+    font-weight: 400;
+    color: #3b3027;
+}
+
+/* ESTILO PARA LAS LISTAS DE LA DESCIPCION */
+#listaperros {
+    list-style-image: url("/img/pata.png");
+    display: inline-block;
+    color: #3b3027;
+}
+
+/* ------------------------ */
+/* ESTILO PARA LAS TARJETAS */
+/* ------------------------ */
+
+.card-hover {
+    transition: all .2s ease-in-out;
+}
+
+.card-hover:hover {
+    transform: scale(1.02);
+    box-shadow: 0 1px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-body>h3 {
+    color: #bc5131;
+    font-size: 20;
+    font-weight: 700;
+}
+
+.card-body>p {
+    font-size: 18;
+    font-weight: 400;
+    color: #3b3027;
+}
+
+/* ESLITO BOTON DE LAS TARJETAS */
+#boton_a {
+    background-color: #bc5131;
+    color: #ecebea;
+}
+
+/* BOTON BACK TO TOP INDEX */
+
+.boton {
+    width: 45px;
+    height: 45px;
+    background: #bc5131;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50%;
+    font-size: 20px;
+    position: fixed;
+    bottom: 90px;
+    right: 25px;
+    cursor: pointer;
+    border: 5px solid transparent;
+    transition: all 350ms ease;
+}
+
+.boton:hover {
+    transform: scale(1.3);
+    border-color: rgba(138, 23, 23, 0.075);
+}
+
+/* BOTON BACK TO TOP RESTO DE PAGINAS */
+
+.boton2 {
+    width: 45px;
+    height: 45px;
+    background: #bc5131;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50%;
+    font-size: 20px;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    cursor: pointer;
+    border: 5px solid transparent;
+    transition: all 350ms ease;
+}
+
+.boton2:hover {
+    transform: scale(1.3);
+    border-color: rgba(138, 23, 23, 0.075);
+}
